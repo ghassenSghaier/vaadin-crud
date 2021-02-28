@@ -1,0 +1,23 @@
+.candidate-view
+{
+  display:block;
+}
+
+.candidate-view .content {
+  display: flex;
+}
+.candidate-view .grid-container{
+  flex:3;
+  flex-direction: column;
+}
+.candidate-view .candidate-form {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--lumo-space-m);
+}
+@media all and (max-width: 500px) {
+  .candidate-view.editing .toolbar,
+  .candidate-view.editing .grid-container {
+    display: none;
+  }
+}
